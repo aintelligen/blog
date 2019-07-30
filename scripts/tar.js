@@ -1,7 +1,7 @@
 const compressing = require('compressing');
 const path = require('path');
-compressing.tar
-  .compressDir(path.resolve(__dirname, '../build'), path.resolve(__dirname, '../build.tar'))
+compressing.tgz
+  .compressDir(path.resolve(__dirname, '../build'), path.resolve(__dirname, '../build.tar.gz'))
   .then(function() {
     console.log('tar success');
   })
