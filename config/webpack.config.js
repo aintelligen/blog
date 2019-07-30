@@ -28,7 +28,7 @@ const typescriptFormatter = require('react-dev-utils/typescriptFormatter');
 const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
 
 const postcssNormalize = require('postcss-normalize');
-
+const BundleAnalyzerPluginBoolean = process.argv[2] ? true : false;
 // Source maps are resource heavy and can cause out of memory issue for large source files.
 const shouldUseSourceMap = process.env.GENERATE_SOURCEMAP !== 'false';
 // Some apps do not need the benefits of saving a web request, so not inlining the chunk
@@ -565,7 +565,7 @@ module.exports = function(webpackEnv) {
             new RegExp('/[^/]+\\.[^/]+$')
           ]
         }),
-      isEnvProduction && new BundleAnalyzerPlugin(),
+      isEnvProduction && BundleAnalyzerPluginBoolean && new BundleAnalyzerPlugin(),
       // TypeScript type checking
       useTypeScript &&
         new ForkTsCheckerWebpackPlugin({
