@@ -1,0 +1,27 @@
+.scroll-top {
+  position: fixed;
+  bottom: 3rem;
+  right: 0;
+  cursor: pointer;
+}
+
+.scroll-top .arrow {
+  text-align: center;
+  margin: 0 auto;
+  padding: 0.5rem 1rem;
+}
+
+.scroll-top .arrow .to-top {
+  text-align: center;
+  font-size: 0.5rem;
+  padding-top: 0.125rem;
+}
+
+.scroll-top .hide {
+  display: none;
+}
+
+
+
+// WEBPACK FOOTER //
+// ./src/components/ScrollTop/style.scss

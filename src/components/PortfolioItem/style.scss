@@ -1,0 +1,97 @@
+.portfolio-item {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin: 0.5rem 0;
+  border-radius: 2px;
+  -webkit-transition: -webkit-box-shadow 0.25s;
+  transition: -webkit-box-shadow 0.25s;
+  -o-transition: box-shadow 0.25s;
+  transition: box-shadow 0.25s;
+  transition: box-shadow 0.25s, -webkit-box-shadow 0.25s;
+  -webkit-box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12), 0 2px 1px -2px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12), 0 2px 1px -2px rgba(0, 0, 0, 0.2);
+  width: 12rem;
+  margin: 1rem 1rem;
+}
+
+@media (max-width: 425px) {
+  .portfolio-item {
+    width: 15rem;
+  }
+}
+
+.portfolio-item:hover {
+  -webkit-box-shadow: 0 6px 12px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 6px 12px 0 rgba(0, 0, 0, 0.2);
+}
+
+.portfolio-item__title {
+  -ms-flex: 1 1;
+  flex: 1 1;
+  padding: 1rem 1.5rem;
+  font-size: 1.125rem;
+  font-weight: 400;
+  text-align: center;
+}
+
+@media (max-width: 425px) {
+  .portfolio-item__title {
+    font-size: 1.25rem;
+  }
+}
+
+.portfolio-item__desc {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  padding: 0 0.5rem;
+  font-size: 0.75rem;
+  font-weight: 400;
+  text-align: center;
+  line-height: 1.25rem;
+}
+
+@media (max-width: 425px) {
+  .portfolio-item__desc {
+    font-size: 0.875rem;
+  }
+}
+
+.portfolio-item__icon {
+  padding: 1rem 0;
+  font-size: 1.5rem;
+  font-weight: 100;
+  text-align: center;
+}
+
+.portfolio-item__icon svg {
+  margin: 0 0.25rem;
+}
+
+.portfolio-item__links {
+  padding: 0 0 0.75rem;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  font-size: 0.875rem;
+  font-weight: 400;
+}
+
+.portfolio-item__links a {
+  padding-bottom: 0.25rem;
+  border-bottom: 2px solid transparent;
+}
+
+.portfolio-item__links a:hover {
+  cursor: pointer;
+  border-bottom: 2px solid inherit;
+}
+
+
+
+// WEBPACK FOOTER //
+// ./src/components/PortfolioItem/style.scss
