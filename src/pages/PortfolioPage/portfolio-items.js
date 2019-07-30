@@ -76,8 +76,8 @@ export default [
     name: 'duiba-siri',
     render: (
       <div className="portfolio-item">
-        <div className="portfolio-item__title">部署与发布</div>
-        <div className="portfolio-item__desc">Node.js项目线上服务器部署与发布</div>
+        <div className="portfolio-item__title">PC端</div>
+        <div className="portfolio-item__desc">PC端商城系统</div>
         <div className="portfolio-item__icon">
           <i className="fab fa-terminal" />
           <i className="fab fa-js" />
@@ -94,8 +94,8 @@ export default [
     name: 'mono-series',
     render: (
       <div className="portfolio-item">
-        <div className="portfolio-item__title">服务器</div>
-        <div className="portfolio-item__desc">Server+DB</div>
+        <div className="portfolio-item__title">后台管理系统</div>
+        <div className="portfolio-item__desc">Admin+DB+Server</div>
         <div className="portfolio-item__icon">
           <i className="fab fa-js" />
         </div>

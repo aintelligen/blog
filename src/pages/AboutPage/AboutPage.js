@@ -25,16 +25,13 @@ const AboutPage = (props, context) => {
         <div className="about-wrapper">
           <div className="about-content" style={{ color: textPrimary }}>
             <p>
-              我是一个对技术充满兴趣的小程序员。擅长<span className="highlight">JavaScript</span>和{' '}
-              <span className="highlight">nodejs</span>
+              我是一个对技术充满兴趣的小程序员。擅长<span className="highlight">前端开发</span>
             </p>
-
             <p>除了我的本职工作外</p>
-
             <p>
               我还对
-              <span className="highlight">python</span>，<span className="highlight">机器学习</span>，
-              <span className="highlight">自动化</span>
+              <span className="highlight">数据库</span>，<span className="highlight">机器学习</span>，
+              <span className="highlight">项目架构设计</span>
               等感兴趣
             </p>
             <p className="text-emoji" style={{ color: colorPrimary }}>
