@@ -68,7 +68,7 @@
   },
   "scripts": {
     "start": "node scripts/start.js",
-    "build": "node scripts/build.js",
+    "build": "rimraf build && rimraf build.7z && node scripts/build.js",
     "buildAnalyzer": "node scripts/build.js --report",
     "test": "node scripts/test.js"
   },
@@ -138,6 +138,8 @@
     ]
   },
   "devDependencies": {
+    "cross-env": "^5.2.0",
+    "rimraf": "^2.6.3",
     "webpack-bundle-analyzer": "^3.3.2"
   }
 }
