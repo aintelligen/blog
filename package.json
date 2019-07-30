@@ -19,6 +19,7 @@
     "babel-preset-react-app": "^9.0.0",
     "camelcase": "^5.2.0",
     "case-sensitive-paths-webpack-plugin": "2.2.0",
+    "compressing": "^1.4.0",
     "css-loader": "2.1.1",
     "dotenv": "6.2.0",
     "dotenv-expand": "4.2.0",
@@ -68,8 +69,9 @@
   },
   "scripts": {
     "start": "node scripts/start.js",
-    "build": "rimraf build && rimraf build.7z && node scripts/build.js",
+    "build": "rimraf build && node scripts/build.js",
     "buildAnalyzer": "node scripts/build.js --report",
+    "tar": "rimraf build.tar && node scripts/tar.js",
     "test": "node scripts/test.js"
   },
   "eslintConfig": {
