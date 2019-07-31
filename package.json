@@ -71,7 +71,7 @@
     "start": "node scripts/start.js",
     "build": "rimraf build && node scripts/build.js",
     "buildAnalyzer": "node scripts/build.js --report",
-    "tar": "rimraf build.tar && node scripts/tar.js",
+    "zip": "rimraf build.zip && node scripts/zip.js",
     "test": "node scripts/test.js"
   },
   "eslintConfig": {
