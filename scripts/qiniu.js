@@ -4,7 +4,7 @@ const qiniu = require('qiniu');
 
 const QNCDN = {
   ak: 'K-Txc-AIwLIxNanT06mKo-pLDyTk28nOAeEh-_P5',
-  sk: 'o9Ft9Dz9TOsjakTial-7uz83kqRMH_0hQrSE2XdI',
+  sk: 'o9Ft9Dz9TOsjakTial-',
   bucket: 'blog',
   host: ''
 };
