@@ -49,6 +49,7 @@
     "postcss-normalize": "7.0.1",
     "postcss-preset-env": "6.6.0",
     "postcss-safe-parser": "4.0.1",
+    "qiniu": "^7.2.2",
     "react": "^16.8.6",
     "react-app-polyfill": "^1.0.1",
     "react-dev-utils": "^9.0.1",
@@ -72,6 +73,7 @@
     "build": "rimraf build && node scripts/build.js",
     "buildAnalyzer": "node scripts/build.js --report",
     "zip": "rimraf build.zip && node scripts/zip.js",
+    "uploadCDN": "node scripts/qiniu.js",
     "test": "node scripts/test.js"
   },
   "eslintConfig": {
