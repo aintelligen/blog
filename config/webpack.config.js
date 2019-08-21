@@ -46,6 +46,7 @@ const sassModuleRegex = /\.module\.(scss|sass)$/;
 // This is the production and development configuration.
 // It is focused on developer experience, fast rebuilds, and a minimal bundle.
 module.exports = function(webpackEnv) {
+  console.log(webpackEnv);
   const isEnvDevelopment = webpackEnv === 'development';
   const isEnvProduction = webpackEnv === 'production';
 
@@ -557,7 +558,7 @@ module.exports = function(webpackEnv) {
         new WorkboxWebpackPlugin.GenerateSW({
           clientsClaim: true,
           exclude: [/\.map$/, /asset-manifest\.json$/],
-          importWorkboxFrom: 'cdn',
+          importWorkboxFrom: 'local',
           navigateFallback: publicUrl + '/index.html',
           navigateFallbackBlacklist: [
             // Exclude URLs starting with /_, as they're likely an API call
@@ -565,7 +566,8 @@ module.exports = function(webpackEnv) {
             // Exclude URLs containing a dot, as they're likely a resource in
             // public/ and not a SPA route
             new RegExp('/[^/]+\\.[^/]+$')
-          ]
+          ],
+          clientsClaim: true
         }),
       isEnvProduction && BundleAnalyzerPluginBoolean && new BundleAnalyzerPlugin(),
       // TypeScript type checking
