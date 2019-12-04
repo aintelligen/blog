@@ -9,6 +9,9 @@ import Browser from '@components/Browser';
 import Footer from '@components/Footer';
 
 class App extends Component {
+  componentDidMount() {
+    document.querySelector('meta[property="og:image"]').content = 'https://aintelligen.com/favicon.ico';
+  }
   render() {
     return (
       <div className="dev-landing-page">
