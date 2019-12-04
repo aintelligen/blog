@@ -10,7 +10,7 @@ import Footer from '@components/Footer';
 
 class App extends Component {
   componentDidMount() {
-    document.querySelector('meta[property="og:image"]').content = 'https://aintelligen.com/favicon.ico';
+    document.querySelector('meta[property="og:image"]').content = window.location.origin + '/favicon.png';
   }
   render() {
     return (
