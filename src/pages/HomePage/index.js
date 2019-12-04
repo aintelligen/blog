@@ -11,6 +11,8 @@ import Footer from '@components/Footer';
 class App extends Component {
   componentDidMount() {
     document.querySelector('meta[property="og:image"]').content = window.location.origin + '/favicon.png';
+    document.querySelector('meta[property="og:title"]').content = 'Aintelligen-title-componentDidMount';
+    document.querySelector('meta[property="og:description"]').content = 'Aintelligen-description-componentDidMount';
   }
   render() {
     return (
